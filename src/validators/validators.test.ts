@@ -35,6 +35,7 @@ describe("validators", () => {
 
         assert.equal(result, expected)
     })
+
     test("isAlphaNumeric - false", () => {
         const input = null;
         const result = isAlphaNumeric(input);

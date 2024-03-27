@@ -36,6 +36,8 @@ export class Nota implements BaseModel {
         this.notas = filesToRecord(files);
         this.notasKeys = files.map(getFileKey);
         this.notasArray = recordToArray(this.notas);
+
+        this.validator.load(this.notasArray);
     }
 
     validate() {
